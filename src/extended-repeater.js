@@ -25,7 +25,6 @@ function repeater(str, options) {
     options.additionSeparator = '|';
   }
   let additionReady = (options.addition + options.additionSeparator).repeat(options.additionRepeatTimes - 1) + options.addition
-  console.log(additionReady)
   if (options.addition === 'undefined') {
     additionReady = ''
   }
