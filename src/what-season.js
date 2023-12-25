@@ -16,12 +16,14 @@ function getSeason(date) {
     return 'Unable to determine the time of year!'
   }
 
-  try {
-    let month = date.getMonth()
-    if (isNaN(date.getTime())) {
 
+  try {
+    if (isNaN(date.getTime())) {
       throw new Error('Invalid date!')
     }
+
+    const month = date.getMonth()
+
     let result = ''
 
     if (month >= 2 && month <= 4) {
